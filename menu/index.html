@@ -1,0 +1,89 @@
+<div class="wrapper d-flex align-items-stretch">
+	  <nav id="sidebar">
+				<div class="p-4 pt-5">
+		  		<!-- <a href="#" class="img logo" style="background-image: url(images/logo2.png);"></a> -->
+            <ul class="list-unstyled components mb-5">
+                <li>
+                    <a href="inicial.php"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li>
+                    <a href="perfil.php"><i class="fas fa-user"></i> Perfil</a>
+                </li>
+                <li>
+                    <a href="#caminhoesSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-truck"></i> Caminhões</a>
+                    <ul class="collapse list-unstyled" id="caminhoesSubmenu">
+                        <li>
+                            <a href="caminhao.php">Ver caminhões </a>
+                        </li>
+                        <li>
+                            <a href="cad_automotor.php">Cadastrar automotor</a>
+                        </li>
+                        <li>
+                            <a href="cad_carreta.php">Cadastrar carreta</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#funcSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <i class="fas fa-user-friends"></i> Funcionários</a>
+                    <ul class="collapse list-unstyled" id="funcSubmenu">
+                        <li>
+                            <a href="funcionarios.php">Ver</a>
+                        </li>
+                        <li>
+                            <a href="cad_funcionario.php">Cadastrar</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#viagensSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <i class="fas fa-suitcase"></i> Viagens</a>
+                    <ul class="collapse list-unstyled" id="viagensSubmenu">
+                        <li>
+                            <a href="viagens.php">Ver</a>
+                        </li>
+                        <li>
+                            <a href="cad_viagens.php">Cadastrar</a>
+                        </li>
+                    </ul> 
+                </li>
+            </ul>
+	      </div> <!-- Fecha div class p-a pt-5 -->
+    </nav> <!-- Fecha nav id sidebar-->
+
+      <!-- conteúdo da página  -->
+    <div id="content" class="p-4 p-md-5">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <div class="container-fluid">
+                  <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <i class="fa fa-bars"></i>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="nav navbar-nav ml-auto">
+                          <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#">Perfil</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Caminhões</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#">Funcionários</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#">Viagens</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="logout.php">Sair</a>
+                          </li>
+                      </ul>
+                  </div> <!-- Fecha div colapse navbar -->
+              </div> <!-- Fecha div container fluid -->
+        </nav>
+     
+      
+
+   
