@@ -1,0 +1,408 @@
+body {
+    background-color: #FAFAFA;
+    margin: 0;
+}
+
+
+.form-login {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid;
+    border-color: #D7E0E0;
+    border-radius: 1%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.logo_caminhao {
+    width: 90px;
+    height: 90px;
+    margin-top: 10%;
+}
+
+.logo_menu{
+   
+    margin-bottom: 15%;
+}
+
+.desc_login {
+    font-size: 21px;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5%;
+    color: #1D4D4F;
+}
+
+.input_login {
+    width: 80%;
+    height: 45px;
+    margin: 0 auto;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 2px;
+    margin-top: 5%;
+    padding: 10px 20px; 
+}
+
+.input_login:focus{
+    outline: none;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+.botao_login{
+    width: 80%;
+    height: 45px;
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 2px;
+    background: #00565C;
+    font-size: 17px;
+    color: #FAFBFC;
+    margin-top: 5%;
+    text-align: center;
+    letter-spacing: -0.04em;    
+    line-height: 21px;
+}
+
+.botao_login:hover{
+    outline: none;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
+    background-color: #006E75;
+    width: 81%;
+    height: 46px;
+}
+
+hr{
+    width: 80%;
+    margin-top: 10%;
+}
+
+p{
+    font-size: 14px;
+    color: #797D85;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.style_a{
+     color: #006E75;
+}
+
+.style_a:hover{
+    text-decoration: none;
+    color: #006E75;
+    font-weight: 700;    
+}
+
+.message_erro{
+    color: #D11212;
+    background-color: #FFFFFF;
+    padding: 3%;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5%;
+    border: solid 1px #D11212 ;
+    border-radius: 5px;
+}
+
+.message_ok {
+    color: green;
+    background-color: #FFFFFF;
+    padding: 3%;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5%;
+    border: solid 1px green ;
+    border-radius: 5px;
+}
+
+.cadastro {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid;
+    border-color: #D7E0E0;
+    border-radius: 1%;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 10%;  
+    text-align: center;
+}
+
+.desc_cadastro {
+    font-size: 21px;
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10%;
+    color: #1D4D4F;
+    margin-bottom: 5%;
+}
+
+label {
+    width: 80%;
+    text-align: left;
+    font-size: 15px;
+    color: #1D4D4F;
+    margin-top: 3%;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+
+.input_cad {
+    width: 80%;
+    height: 45px;
+    margin: 0 auto;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 2px; 
+    padding: 10px 20px; 
+}
+
+.input_cad:focus{
+    outline: none;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+a{
+    color: #FFFFFF;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.btn1{
+    height: 60px;
+    width: 170px;
+    background: #00565C;
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #FAFAFA;
+    font-size: 13px;
+    float: right;
+}
+
+.btn1:hover {
+    outline: none;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
+    height: 61px;
+    width: 171px;
+    font-weight: 700;
+}
+
+.btn1:focus {
+    outline: none;
+}
+
+
+.caixa {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid  #D7E0E0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-radius: 1%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    height: 470px;
+    margin-bottom: 15%;
+}
+
+.item {
+    height: 95px;
+    background: #FAFAFA;
+    border: 1px solid #D7E0E0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.enunciado{
+    font-size: 20px;
+    color: #4B6769;
+}
+
+.input_cadastro{
+    width: 100%;
+    height: 45px;
+    margin: 0 auto;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 2px; 
+    padding: 10px 20px; 
+}
+
+.input_cadastro:focus{
+    outline: none;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+.select_cadastro{
+    width: 100%;
+    height: 45px;
+    margin: 0 auto;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 2px; 
+    padding: 10px 20px; 
+    columns: #8e8e8e;;
+}
+
+.select_cadastro:focus{
+    outline: none;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+.label_cad{
+    text-align: left;
+    font-size: 15px;
+    color: #1D4D4F;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+
+
+.botao_cad{
+    height: 45px;
+    width: 100%;
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 2px;
+    background: #00565C;
+    font-size: 17px;
+    color: #FAFBFC;
+    text-align: center;
+    letter-spacing: -0.04em;    
+    line-height: 21px;
+    margin-top: 30px;
+    margin: auto;
+}
+
+.botao_cad:hover{
+    outline: none;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
+    background-color: #006E75;
+    height: 46px;
+}
+
+.mensagem_erro{
+    color: #D11212;
+    background-color: #FFFFFF;
+    padding: 2%;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 1%;
+    border: solid 1px #D11212 ;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.mensagem_ok {
+    color: green;
+    background-color: #FFFFFF;
+    padding: 2%;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 1%;
+    border: solid 1px green ;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.caixa_form{
+    width: 100%;
+    background-color: #fff;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    margin-bottom: 10%;
+    padding-right: 5%;
+    padding-left: 5%;
+    border-radius: 1%;
+    border: 1px solid  #D7E0E0;
+}
+
+.titulo_form{
+    font-size: 20px;
+    color: #4B6769;
+}
+
+.alinhar {
+    float: left;
+}
+
+.observacao{
+    margin-top: 2%;
+    color: #5f5f5f;
+}
+
+#panel, .flip {
+    padding: 10px;
+    color: #000;
+    border: solid 1px #a6d8a8;
+    margin: auto;
+}
+  
+#panel {
+    display: none;
+}
+
+#btn_action{
+    border-radius: 50%;
+    height: 40px;
+    width: 43px;
+}
+
+#botao{
+    height: 45px;
+    width: 100%;
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 2px;
+    background: #00565C;
+    font-size: 17px;
+    color: #FAFBFC;
+    text-align: center;
+    letter-spacing: -0.04em;    
+    line-height: 21px;
+    margin-top: 30px;
+    margin: auto;
+    padding: 10px;
+}
+
+#botao:hover{
+    outline: none;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
+    background-color: #006E75;
+    height: 46px;
+}
+
+
+.page-header{
+    font-size: 23px;
+    color: #343a40;
+    margin-bottom: 25px;
+}
+
+th{
+    color: #646669;
+    font-weight: 500;
+}
+
+td{
+    color: #84878c;
+}
+
+.p_list{
+    font-size: 16px;
+}
+
+.parag{
+    font-size: 15px;
+    color: #343a40;
+}
