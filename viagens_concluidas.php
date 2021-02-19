@@ -52,14 +52,10 @@
                                  }
                             ?>
 
+                            <th>Local de saída</th>
+                            <th>Local de chegada</th>
+
                             <th>Visualizar</th>
-                            <th>Despesas</th>
-                            <th>Alterar</th>
-                            <?php
-                                 if($_SESSION['tipo'] == 1){
-                                     echo "<th>Excluir</th>";
-                                 }
-                            ?>
 
                         <thead>
                         <tbody>
@@ -84,6 +80,8 @@
                 echo "<td>".date('d/m/Y', strtotime($viagem_func['dt_carregamento']))."</td>";
                 echo "<td>".$viagem_func['placa']."</td>";
                 echo "<td>".$viagem_func['nome']."</td>";
+                echo "<td>".$viagem_func['local_carregamento']."</td>";
+                echo "<td>".$viagem_func['destino']."</td>";
             
             ?>
                                 
@@ -92,21 +90,7 @@
                                    echo "<a class='btn btn-info' style='background-color: #5a95d4; border: #5a95d4;' id='btn_action' href='ver_viagens.php?id=".$viagem_func['id_viagem']."'><i class='fas fa-mouse-pointer'></i></a>";
                                 ?>                                
                                 </td>
-                                <td>
-                                <?php
-                                   echo "<a class='btn btn-info' style='background-color: #d2238f; border: #d2238f;' id='btn_action' href='despesas.php?id=".$viagem_func['id_viagem']."'><i class='fas fa-plus'></i></a>";
-                                ?> 
-                                </td>
-                                <td>
-                                <?php
-                                   echo "<a class='btn btn-primary' id='btn_action' href='alterar_viagem.php?id=".$viagem_func['id_viagem']."'><i class='fas fa-edit'></i></a>";
-                                ?>                                
-                                </td>
-                                <td>
-                                <?php
-                                   echo "<a class='btn btn-success' style='background-color: #d82a3b;  border: #d82a3b;' id='btn_action' href='excluir_viagem.php?id=".$viagem_func['id_viagem']."' data-confirm='Tem certeza que deseja excluir o item selecionado?'><i class='far fa-trash-alt'></i></a>";
-                                ?>
-                                </td>   
+                                  
                             </tr>
             <?php
                 $cont++;
@@ -128,6 +112,8 @@
                 echo "<td style='color: #0d6f75; font-weight: 700;'>".$cont."</td>";
                 echo "<td>".date('d/m/Y', strtotime($viagem['dt_carregamento']))."</td>";
                 echo "<td>".$viagem['placa']."</td>";
+                echo "<td>".$viagem_func['local_carregamento']."</td>";
+                echo "<td>".$viagem_func['destino']."</td>";
             
             ?>
                                 
@@ -136,16 +122,7 @@
                                    echo "<a class='btn btn-info' style='background-color: #5a95d4; border: #5a95d4;' id='btn_action' href='ver_viagens.php?id=".$viagem['id_viagem']."'><i class='fas fa-mouse-pointer'></i></a>";
                                 ?> 
                                 </td>
-                                <td>
-                                <?php
-                                   echo "<a class='btn btn-info' style='background-color: #d2238f; border: #d2238f;' id='btn_action' href='despesas.php?id=".$viagem['id_viagem']."'><i class='fas fa-plus'></i></a>";
-                                ?>                                 
-                                </td>
-                                <td>
-                                <?php
-                                   echo "<a class='btn btn-primary' id='btn_action' href='alterar_viagem.php?id=".$viagem['id_viagem']."'><i class='fas fa-edit'></i></a>";
-                                ?>   
-                                </td>
+                                
                                 
                                 
                             </tr>

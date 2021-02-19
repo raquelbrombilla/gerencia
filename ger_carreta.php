@@ -77,7 +77,7 @@
                     echo "</form>";
                 } else {
                     echo "<br>";
-                    echo "<p class='parag'><b>Não há motoristas cadastrados sem automotores.</b></p>";
+                    echo "<p class='parag'><b>Não há carretas cadastradas que não estão vinculadas a automotores.</b></p>";
                 }
 
                 ?>

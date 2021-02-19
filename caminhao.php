@@ -70,9 +70,10 @@
                                         echo "<td><a class='btn btn-info' style='background-color: #5a95d4; border: #5a95d4;' id='btn_action' href='ver_automotor.php?id=".$automotor['id_automotor']."'><i class='fas fa-mouse-pointer'></i></a></td>";
                                         echo "<td><a class='btn btn-primary' id='btn_action' href='alterar_automotor.php?id=".$automotor['id_automotor']."'><i class='fas fa-edit'></i></a></td>";                                        
                                         echo "<td><a class='btn btn-success' style='background-color: #d82a3b;  border: #d82a3b;' id='btn_action' href='excluir_automotor.php?id=".$automotor['id_automotor']."' data-confirm='Tem certeza que deseja excluir o item selecionado?'><i class='far fa-trash-alt'></i></a>";
-                                }
+                                        $cont++;
+                                    }
                                 echo "</tr>";
-                                $cont++;
+                                
                             ?>
                         </tbody>
                     </table>
@@ -105,9 +106,10 @@
                                 echo "<td><a class='btn btn-info' style='background-color: #5a95d4; border: #5a95d4;' id='btn_action' href='ver_carreta.php?id=".$carreta['id_carreta']."'><i class='fas fa-mouse-pointer'></i></a></td>";
                                 echo "<td><a class='btn btn-primary' id='btn_action' href='alterar_carreta.php?id=".$carreta['id_carreta']."'><i class='fas fa-edit'></i></a></td>";                                        
                                 echo "<td><a class='btn btn-success' style='background-color: #d82a3b;  border: #d82a3b;' id='btn_action' href='excluir_carreta.php?id=".$carreta['id_carreta']."' data-confirm='Tem certeza que deseja excluir o item selecionado?'><i class='far fa-trash-alt'></i></a>";
+                                $cont++;
                         }
                         echo "</tr>";
-                        $cont++;
+                        
                     ?>
                     </tbody>
                 </table>

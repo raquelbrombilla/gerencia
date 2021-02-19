@@ -110,9 +110,53 @@
                                 <label for='valor_frete' class='label_cad'> Valor do frete  </label>
                                     <input type='number' value='".$viagem['valor_frete']."' class='input_cadastro' style='background-color: #ecebeb75;' readonly>
                             </div>
+                        </div>";
+                        ?>
+
+                        <br>
+
+                        <div class="row">
+                            <div class="table-responsive col-md-12 align='center'">
+                                <table class="table table-striped align='center'" cellspacing="0" cellpadding="0">
+                                <thead align='center'>
+                                <th>Despesas</th>
+                                <th>Alterar</th>
+
+                            <?php
+                                 if($_SESSION['tipo'] == 1){
+                                     echo "<th>Excluir</th>";
+                                 }
+                            ?>
+                        
+                                <thead>
+                                <tbody>
+                                    <tr align='center'>
+                                        <td>
+                                        <?php
+                                        echo "<a class='btn btn-info' style='background-color: #d2238f; border: #d2238f;' id='btn_action' href='despesas.php?id=".$viagem['id_viagem']."'><i class='fas fa-plus'></i></a>";
+                                        ?> 
+                                        </td>
+                                        <td>
+                                        <?php
+                                        echo "<a class='btn btn-primary' id='btn_action' href='alterar_viagem.php?id=".$viagem['id_viagem']."'><i class='fas fa-edit'></i></a>";
+                                        ?>                                
+                                        </td>
+                                        <?php
+                                        
+                                        if($_SESSION['tipo'] == 1){
+                                        echo "<td>";                                     
+                                        echo "<a class='btn btn-success' style='background-color: #d82a3b;  border: #d82a3b;' id='btn_action' href='excluir_viagem.php?id=".$viagem['id_viagem']."' data-confirm='Tem certeza que deseja excluir o item selecionado?'><i class='far fa-trash-alt'></i></a>";
+                                        echo "</td>"; 
+                                        }
+                                       ?>
+                                     
+                                    </tr>
+                                </tbody>
+                                </table>
+                            </div>
                         </div>
 
-                        ";
+                    <?php
 
                     } else if($viagem['concluida'] == 0){
                         echo "
@@ -144,7 +188,45 @@
                         </div>
                         ";
 
+                        ?>
+
+                        <br>
+
+                        <div class="row">
+                            <div class="table-responsive col-md-12 align='center'">
+                                <table class="table table-striped align='center'" cellspacing="0" cellpadding="0">
+                                <thead align='center'>
+                                <th>Despesas</th>
+                                <th>Alterar</th>
+                                <th>Concluir</th>
+                        
+                                <thead>
+                                <tbody>
+                                    <tr align='center'>
+                                        <td>
+                                        <?php
+                                        echo "<a class='btn btn-info' style='background-color: #d2238f; border: #d2238f;' id='btn_action' href='despesas.php?id=".$viagem['id_viagem']."'><i class='fas fa-plus'></i></a>";
+                                        ?> 
+                                        </td>
+                                        <td>
+                                        <?php
+                                        echo "<a class='btn btn-primary' id='btn_action' href='alterar_viagem.php?id=".$viagem['id_viagem']."'><i class='fas fa-edit'></i></a>";
+                                        ?>                                
+                                        </td>
+                                        <td>
+                                        <?php                                                                          
+echo "<a class='btn btn-success' style='background-color: #28a945;  border: #28a945;' id='btn_action' href='concluir_viagem.php?id=".$viagem['id_viagem']."'><i class='fas fa-check'></i></a>";                                       ?>
+                                       </td>
+                                     
+                                    </tr>
+                                </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    <?php
+
                     }
+                                                 
                 
                 ?>
 
@@ -153,6 +235,9 @@
         <?php
         include_once("link_fim.php"); 
     ?>
+
+<script src="js/personalizado.js"></script>
+
   
 </body>
 </html>

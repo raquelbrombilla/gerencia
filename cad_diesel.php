@@ -38,7 +38,9 @@
                     <div class="row col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <div class="alinhar col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                             <label for="data" class="label_cad"> Data </label>
-                            <input type="date" id="data" name="data" value="2020-10-12" class="input_cadastro" required>
+                            <?php
+                            echo "<input type='date' id='data' name='data' value='".date("d/m/Y")."' class='input_cadastro' required>";
+                            ?>
                         </div>
                         
                         <div class ="alinhar col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">   
